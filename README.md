@@ -1,6 +1,6 @@
 # Methodology deployed :
 
-(Image result)
+![](./AssetsReadme/result.png)
 
 ## Step 1
 
@@ -14,7 +14,7 @@ on any server.
 Added the Leaflet map using the javascript library 'react-leaflet' to accurately display the
 location of the digital terrain model.
 
-(Image map)
+![](./AssetsReadme/map.png)
 
 ## Step 3: Adding different interactions
 
@@ -25,7 +25,7 @@ according to the movements of the drone.
 - A button to create a display rectangle allowing the user to select only a portion of the
 digital terrain model to display.
 
-(Image feature)
+![](./AssetsReadme/feature.png)
 
 ## Step 4
 
@@ -37,7 +37,7 @@ altitude using the javascript library 'chroma-js' (from red for the deepest to b
 Use of the Javascript Library 'proj4' to transform geospatial coordinates from one coordinate
 reference system (CRS) to another.
 
-(Image color)
+![](./AssetsReadme/color.png)
 
 ## Step 6
 
@@ -48,6 +48,6 @@ accomplish since I had never done 3D on the web before.
 # => Test result : display of a live digital terrain model on a localized 2D background map
 and display of the same model in 3D on a web platform.
 
-(Image result)
+![](./AssetsReadme/result.png)
 
 
