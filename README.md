@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Methodology deployed :
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+(Image result)
 
-## Available Scripts
+## Step 1
 
-In the project directory, you can run:
+Development of a web application with the React.js language contained in a Docker
+container for a better management of dependencies and their versions. Docker is a tool that
+can package an application and its dependencies in an isolated container, which can be run
+on any server.
 
-### `npm start`
+## Step 2
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Added the Leaflet map using the javascript library 'react-leaflet' to accurately display the
+location of the digital terrain model.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+(Image map)
 
-### `npm test`
+## Step 3: Adding different interactions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- A button to load a '.tiff' or '.tif' file that contains all the data of a digital terrain model
+such as its location.
+- An input to define the display speed of the digital terrain model which is displayed
+according to the movements of the drone.
+- A button to create a display rectangle allowing the user to select only a portion of the
+digital terrain model to display.
 
-### `npm run build`
+(Image feature)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Step 4
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Realization of the 2D display of the digital terrain model, by varying colors according to the
+altitude using the javascript library 'chroma-js' (from red for the deepest to blue for the highest).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Step 5
 
-### `npm run eject`
+Use of the Javascript Library 'proj4' to transform geospatial coordinates from one coordinate
+reference system (CRS) to another.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+(Image color)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Step 6
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Adding the 3D display functionality of the digital terrain model to have a much more
+understandable view (using the Javascript Library Three.js). This was a difficult task to
+accomplish since I had never done 3D on the web before.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# => Test result : display of a live digital terrain model on a localized 2D background map
+and display of the same model in 3D on a web platform.
 
-## Learn More
+(Image result)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
